@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                                controllers.HomeController.index()
+GET     /api/v1/products                 controllers.Application.index()
+GET     /api/v1/products/:id             controllers.Application.detail(id: Long)
+POST    /api/v1/products                 controllers.Application.create()
+DELETE  /api/v1/products/:id             controllers.Application.delete(id: Long)
+PUT     /api/v1/products/:id             controllers.Application.update(id: Long)
